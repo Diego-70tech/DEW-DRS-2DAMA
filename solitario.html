@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solitario Manrique</title>
+    <link rel="stylesheet" href="css/solitario.css">
+</head>
+<body>
+
+    <header id="cabecera-principal">
+        <div class="header-top">
+            <h1 id="titulo">Solitario Manrique</h1>
+            <img src="imagenes/logo.png" id="logo" alt="Logo">
+        </div>
+        <hr>
+
+        <div class="header-controls">
+            <!-- Selector de modos -->
+            <div id="selector-modo">
+                <span>Elige un modo:</span>
+                <button class="btn-modo">Escalera de color</button>
+                <button class="btn-modo">Escalera de color alternada</button>
+                <button class="btn-modo">Mismo palo</button>
+            </div>
+
+            <!-- Marcadores de juego -->
+            <div id="marcadores">
+                <div id="modo_actual">Modo: <span>sin elegir</span></div>
+                <div id="contador_tiempo">Tiempo: <span>00:00:00</span></div>
+                <div id="contador_movimientos">Movimientos: <span>0</span></div>
+            </div>
+        </div>
+    </header>
+
+    <main id="juego">
+        <!-- Zonas superiores -->
+        <div id="inicial">
+            Elige un modo de juego para empezar
+            <div id="contador_inicial" class="badge">0</div>
+        </div>
+        <div id="sobrantes">
+            <div id="contador_sobrantes" class="badge">0</div>
+        </div>
+
+        <!-- Receptores inferiores -->
+        <div id="receptores">
+            <div id="receptor1" class="receptor"><span id="contador_receptor1" class="badge">0</span></div>
+            <div id="receptor2" class="receptor"><span id="contador_receptor2" class="badge">0</span></div>
+            <div id="receptor3" class="receptor"><span id="contador_receptor3" class="badge">0</span></div>
+            <div id="receptor4" class="receptor"><span id="contador_receptor4" class="badge">0</span></div>
+        </div>
+    </main>
+    
+
+    
+    <footer id="pie-pagina">
+        <div id="botones">
+            <button id="reset">Reiniciar</button>
+            <button id="nuevo">Nuevo juego</button>
+            <button id="finalizar">Finalizar partida</button>
+        </div>
+
+        <!-- Avisos y diálogos -->
+        <div id="aviso"></div>
+        <div id="dialogo_fin">
+            <div id="resumen_fin"></div>
+        </div>
+    </footer>
+
+    <script src="js/solitario.js"></script>
+</body>
+</html>

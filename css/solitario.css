@@ -1,0 +1,149 @@
+body {
+    background-color: #f7f3eb;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 30px 50px;
+    color: #333;
+}
+
+#inicial, #sobrantes, #receptores .receptor {
+    background-color: #383431;
+    border: 2px dashed #666;
+    border-radius: 8px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+#cabecera-principal, .header-controls, #pie-pagina {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-top, #selector-modo, #marcadores, #receptores, #botones, #juego, #inicial, .badge {
+    display: flex;
+}
+
+.header-top {
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#titulo {
+    color: #d93838;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0 0 10px;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #d93838;
+    margin: 0 0 15px;
+    width: 100%;
+}
+
+.header-controls { gap: 12px; }
+#logo { width: 60px; height: 60px; }
+
+#selector-modo {
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.btn-modo {
+    background: transparent;
+    color: #d93838;
+    border: 1px solid #d93838;
+    border-radius: 6px;
+    padding: 6px 14px;
+    font-size: 13px;
+    cursor: pointer;
+}
+.btn-modo:hover { background-color: #fde8e8; }
+
+#marcadores {
+    gap: 30px;
+    font-size: 15px;
+    font-weight: bold;
+}
+#marcadores span { color: #d93838; }
+
+/* MAIN - JUEGO */
+#juego {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+        "inicial inicial sobrantes ."
+        "receptores receptores receptores receptores";
+    gap: 1.5rem;
+    padding: 20px;
+    width: 100%;
+    background-color: #383431;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    margin: 20px 0;
+}
+
+#inicial {
+    grid-area: inicial;
+    padding: 20px;
+    color: #aaa;
+    font-size: 14px;
+    height: 220px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#sobrantes {
+    grid-area: sobrantes;
+    height: 150px;
+}
+
+#receptores {
+    grid-area: receptores;
+    gap: 15px;
+    width: 100%;
+}
+
+#receptores .receptor {
+    flex: 1;
+    height: 140px;
+}
+
+/* Badges / Contadores */
+.badge {
+    background-color: #111;
+    color: #fff;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+}
+
+/* FOOTER */
+#pie-pagina { gap: 10px; width: fit-content; }
+#botones { gap: 10px; }
+
+#reset, #nuevo, #finalizar {
+    border-radius: 6px;
+    padding: 8px 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+#reset { background-color: #e57373; color: #fff; }
+#nuevo { background-color: #222b32; color: #fff; }
+#finalizar { background-color: transparent; color: #777; border: 1px solid #ccc; }

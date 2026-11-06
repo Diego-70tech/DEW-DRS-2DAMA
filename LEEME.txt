@@ -1,0 +1,22 @@
+SOLITARIO MANRIQUE · HITO 1 · ITINERARIO B (interfaz propia)
+=============================================================
+
+Esta plantilla contiene solo:
+
+  js/solitario.js   Programa base. Completen las zonas marcadas con CODIGO.
+  imagenes/         Las 48 cartas, el reverso y el logo.
+
+El HTML (solitario.html) y el CSS (css/solitario.css) los crean ustedes
+desde cero, siguiendo los pasos 1, 2 y 3 del enunciado del itinerario B.
+
+Estructura final del proyecto:
+
+  solitario.html
+  css/solitario.css
+  js/solitario.js
+  imagenes/...
+
+IMPORTANTE: el HTML debe respetar el «contrato de la interfaz» del
+apartado 2.2 del enunciado (identificadores, clases y atributos).
+Para comprobarlo, abran la consola del navegador y ejecuten el código
+del apartado 5 del enunciado: el resultado debe ser una lista vacía.
